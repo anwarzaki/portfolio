@@ -60,7 +60,7 @@ const About = () => {
               custom={3}
             >
               When I'm not coding, you can find me exploring new technologies,
-              contributing to open source, or working on personal projects.
+              playing badminton, or working on personal projects.
             </motion.p>
           </motion.div>
 

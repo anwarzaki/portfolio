@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="flex space-x-6 mb-6 md:mb-0">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/anwarzaki"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -25,7 +25,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/zaki-anwar18/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -62,7 +62,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Zaki Anwar. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            Built with React, Tailwind CSS, and ❤️
+            Built with React, Tailwind CSS and framer-motion
           </p>
         </div>
       </div>
