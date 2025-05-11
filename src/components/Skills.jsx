@@ -64,7 +64,10 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="min-h-screen bg-[#0f1123] px-8 py-12 text-white">
+    <div
+      id="skills"
+      className="min-h-screen bg-[#0f1123] px-8 py-12 text-white"
+    >
       <h2 className="text-3xl font-bold text-center mb-10">My Skills</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {skills.map((skill, idx) => (
