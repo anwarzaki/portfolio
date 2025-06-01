@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const projects = [
   {
     title: "EstellaParis Perfume (E-commerce)",
@@ -37,44 +39,85 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 bg-gray-800">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           My <span className="text-blue-400">Projects</span>
-        </h2>
+        </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-gray-900 rounded-lg overflow-hidden border border-gray-700 hover:border-blue-400 transition-colors"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ y: -5 }}
             >
               {/* Project Image */}
-              <div className="h-72 overflow-hidden">
+              <motion.div 
+                className="h-72 overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <img
                   src={project.image}
                   alt={`${project.title} Image`}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </motion.div>
 
               {/* Project Content */}
-              <div className="p-2">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+              <div className="p-6">
+                <motion.h3 
+                  className="text-xl font-bold mb-2"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.2 + index * 0.2 }}
+                >
+                  {project.title}
+                </motion.h3>
+                <motion.p 
+                  className="text-gray-300 mb-4"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.3 + index * 0.2 }}
+                >
+                  {project.description}
+                </motion.p>
+                <motion.div 
+                  className="flex flex-wrap gap-2 mb-4"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.4 + index * 0.2 }}
+                >
                   {project.technologies.map((tech, i) => (
-                    <span
+                    <motion.span
                       key={i}
                       className="px-3 py-1 bg-blue-900/50 text-blue-400 rounded-full text-sm"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
                     >
                       {tech}
-                    </span>
+                    </motion.span>
                   ))}
-                </div>
-                <a
+                </motion.div>
+                <motion.a
                   href={project.link}
                   className="text-blue-400 hover:text-blue-300 inline-flex items-center"
-                  target="_blank" // Opens the link in a new tab
-                  rel="noopener noreferrer" // Security best practice
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ x: 10 }}
+                  transition={{ duration: 0.2 }}
                 >
                   View Project
                   <svg
@@ -90,9 +133,9 @@ const Projects = () => {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </a>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
