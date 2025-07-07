@@ -6,7 +6,7 @@ const projects = [
     description:
       "Full-stack e-commerce platform for perfume retail using MERN stack with JWT authentication, Cloudinary integration, and admin dashboard.",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
-    link: "https://github.com/anwarzaki/estellaPerfume",
+    link: "https://estella-paris-perfume.vercel.app",
     image: "perfume.png",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     description:
       "Word lookup app using Dictionary API to fetch word meanings, definitions, and examples.",
     technologies: ["JavaScript", "HTML", "CSS", "Dictionary API"],
-    link: "https://github.com/anwarzaki/Dictionary",
+    link: "https://zaki-dictionary.vercel.app",
     image: "dictionary.png",
   },
 ];
@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 bg-gray-800">
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const Projects = () => {
               whileHover={{ y: -5 }}
             >
               {/* Project Image */}
-              <motion.div 
+              <motion.div
                 className="h-72 overflow-hidden"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
@@ -75,7 +75,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <motion.h3 
+                <motion.h3
                   className="text-xl font-bold mb-2"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -84,7 +84,7 @@ const Projects = () => {
                 >
                   {project.title}
                 </motion.h3>
-                <motion.p 
+                <motion.p
                   className="text-gray-300 mb-4"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -93,7 +93,7 @@ const Projects = () => {
                 >
                   {project.description}
                 </motion.p>
-                <motion.div 
+                <motion.div
                   className="flex flex-wrap gap-2 mb-4"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

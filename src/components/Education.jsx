@@ -43,7 +43,7 @@ const Education = () => {
             <p className="text-gray-400 mb-2">
               Maulana Azad National Urdu University, Hyderabad
             </p>
-            <p className="text-gray-300 mb-2">2021 - 2025 | CGPA: 8.02</p>
+            <p className="text-gray-300 mb-2">2021 - 2025 | CGPA: 8.08</p>
             <p className="text-gray-300">
               Relevant Coursework: Data Structures & Algorithms, Database
               Management System (DBMS), OOPS Concept, Web Development
@@ -51,7 +51,7 @@ const Education = () => {
           </motion.div>
 
           {/* Freelance Entry */}
-          <motion.div
+          {/* <motion.div
             className="border-l-2 border-blue-400 pl-8 relative pb-8"
             initial="hidden"
             whileInView="visible"
@@ -70,7 +70,7 @@ const Education = () => {
               Developed full-stack e-commerce platform using MERN stack with JWT
               authentication, admin dashboard, and Cloudinary integration.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

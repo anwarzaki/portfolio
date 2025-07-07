@@ -39,9 +39,12 @@ const About = () => {
               variants={textVariant}
               custom={1}
             >
-              I'm a passionate full-stack developer with experience in building
-              web applications using modern technologies like React, Node.js,
-              and MongoDB.
+              I'm a dedicated full-stack developer with hands-on experience in
+              building responsive and scalable web applications using{" "}
+              <span className="text-blue-400">
+                MERN (MongoDB, Express.js, React, Node.js)
+              </span>{" "}
+              and <span className="text-blue-400">Next.js</span>.
             </motion.p>
 
             <motion.p
@@ -51,7 +54,7 @@ const About = () => {
             >
               My journey in web development started during my college years, and
               since then I've worked on various projects ranging from small
-              business websites to complex web applications.
+              websites to complex web applications.
             </motion.p>
 
             <motion.p
