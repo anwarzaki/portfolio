@@ -29,9 +29,8 @@ const Header = ({ active, setActive }) => {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className={`${
-                  active === link.title ? "text-white" : "text-gray-400"
-                } hover:text-white transition-colors`}
+                className={`${active === link.title ? "text-white" : "text-gray-400"
+                  } hover:text-white transition-colors`}
                 onClick={() => setActive(link.title)}
               >
                 {link.title}
@@ -76,9 +75,8 @@ const Header = ({ active, setActive }) => {
                   <li key={link.id}>
                     <a
                       href={`#${link.id}`}
-                      className={`${
-                        active === link.title ? "text-white" : "text-gray-400"
-                      } hover:text-white block px-4 py-2`}
+                      className={`${active === link.title ? "text-white" : "text-gray-400"
+                        } hover:text-white block px-4 py-2`}
                       onClick={() => {
                         setToggle(false);
                         setActive(link.title);

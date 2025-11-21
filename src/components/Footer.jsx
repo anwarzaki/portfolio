@@ -12,22 +12,22 @@ const Footer = () => {
   return (
     <footer className="py-12 px-6 bg-gray-900 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           className="flex flex-col md:flex-row justify-between items-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <motion.div 
+          <motion.div
             className="mb-6 md:mb-0"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <motion.a 
-              href="/" 
+            <motion.a
+              href="/"
               className="flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
@@ -36,7 +36,7 @@ const Footer = () => {
                 Zaki <span className="text-blue-400">Anwar</span>
               </span>
             </motion.a>
-            <motion.p 
+            <motion.p
               className="text-gray-400 mt-2"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -47,7 +47,7 @@ const Footer = () => {
             </motion.p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex space-x-6 mb-6 md:mb-0"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -104,21 +104,21 @@ const Footer = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="mt-12 pt-8 border-t border-gray-800 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <motion.p 
+          <motion.p
             className="text-gray-400"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
             © {new Date().getFullYear()} Zaki Anwar. All rights reserved.
           </motion.p>
-          <motion.p 
+          <motion.p
             className="text-gray-500 text-sm mt-2"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

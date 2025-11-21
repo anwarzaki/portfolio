@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6 bg-gray-800">
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ const Contact = () => {
         </motion.h2>
 
         <div className="flex flex-col md:flex-row gap-12">
-          <motion.div 
+          <motion.div
             className="flex-1"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex-1"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -163,7 +163,7 @@ const Contact = () => {
             </form>
             <AnimatePresence>
               {status && (
-                <motion.div 
+                <motion.div
                   className="text-center text-white mt-4 p-4 bg-gray-700 rounded-md"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

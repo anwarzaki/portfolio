@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProfileCard from "./ProfileCard";
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -75,16 +76,15 @@ const About = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="w-64 h-64 md:w-80 md:h-80 relative">
-              <div className="absolute inset-0 border-4 border-blue-400 rounded-lg transform rotate-3"></div>
-              <div className="absolute inset-0 bg-gray-700 rounded-lg overflow-hidden transform -rotate-3">
-                <img
-                  src="/zakikaphoto.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+            <ProfileCard
+              src="/zaki-pass.jpg"
+              name="Zaki Anwar"
+              title="Full Stack Developer"
+              handle="zakianwar"
+              status="Available"
+              contactText="Let's Connect"
+              onContactClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+            />
           </motion.div>
         </div>
       </div>

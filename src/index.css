@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@layer base {
+    * {
+        font-family: Georgia, serif !important;
+    }
+
+    html,
+    body {
+        font-family: Georgia, serif !important;
+    }
+}

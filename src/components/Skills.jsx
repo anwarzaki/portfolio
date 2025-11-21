@@ -84,7 +84,7 @@ export default function Skills() {
       id="skills"
       className="min-h-screen bg-[#0f1123] px-8 py-12 text-white"
     >
-      <motion.h2 
+      <motion.h2
         className="text-3xl font-bold text-center mb-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function Skills() {
       >
         My <span className="text-blue-400">Skills</span>
       </motion.h2>
-      <motion.div 
+      <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
         variants={container}
         initial="hidden"
@@ -105,7 +105,7 @@ export default function Skills() {
             key={idx}
             className="bg-[#1a1c2c] p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
             variants={item}
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               backgroundColor: "#252842",
               transition: { duration: 0.2 }
@@ -118,7 +118,7 @@ export default function Skills() {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.6 }}
             />
-            <motion.h3 
+            <motion.h3
               className="text-xl font-semibold text-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
