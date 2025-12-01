@@ -93,7 +93,7 @@ const Hero = () => {
             Contact Me
           </motion.a>
           <motion.a
-            href="https://drive.google.com/file/d/1AkI51JunHrNtkWGkCNKiewA6ztnGP322/view?usp=sharing"
+            href="https://drive.google.com/file/d/1oiCBuzSKF9M3sZV7qCzC3ApHyrkssNiB/view?usp=sharing"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             target="_blank"

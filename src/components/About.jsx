@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ProfileCard from "./ProfileCard";
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -68,23 +67,21 @@ const About = () => {
             </motion.p>
           </motion.div>
 
-          {/* Profile Image Animation */}
+          {/* Profile Image Only */}
           <motion.div
             className="flex-1 flex justify-center"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <ProfileCard
-              src="/zaki-pass.jpg"
-              name="Zaki Anwar"
-              title="Full Stack Developer"
-              handle="zakianwar"
-              status="Available"
-              contactText="Let's Connect"
-              onContactClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-            />
+            <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl group">
+              <img
+                src="/zaki anwar-pic.jpg"
+                alt="Zaki Anwar"
+                className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
